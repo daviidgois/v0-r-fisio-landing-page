@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
+  robots: "noimageindex, noarchive, nosnippet",
+  openGraph: {
+    type: "website",
+    url: "https://rfisio.com",
+    title: "",
+    description: "",
+    images: [],
+  },
+  twitter: {
+    card: "summary",
+    title: "",
+    description: "",
+    images: [],
+  },
 }
 
 export default function RootLayout({
