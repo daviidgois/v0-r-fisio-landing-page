@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  robots: "noimageindex, noarchive, nosnippet, noodp",
+  robots: "noimageindex, noarchive, nosnippet, noodp, noindex, nofollow",
 }
 
 export default function RootLayout({
