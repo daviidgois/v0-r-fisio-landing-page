@@ -14,7 +14,15 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  robots: "noimageindex, noarchive, nosnippet, noodp, noindex, nofollow",
+  robots: "noimageindex, noarchive, nosnippet, noodp, noindex, nofollow, noimageclick",
+  other: {
+    "og:type": "website",
+    "og:image": "",
+    "og:image:width": "0",
+    "og:image:height": "0",
+    "twitter:card": "summary",
+    "twitter:image": "",
+  },
 }
 
 export default function RootLayout({
