@@ -14,27 +14,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  robots: "noimageindex, noarchive, nosnippet",
-  openGraph: {
-    type: "website",
-    url: "https://rfisio.com",
-    title: "R.FISIO - Fisioterapia e Osteopatia",
-    description: "Serviços profissionais de fisioterapia, osteopatia e exercício clínico",
-    images: [
-      {
-        url: "/rfisio-sp.jpg",
-        width: 1200,
-        height: 630,
-        alt: "R.FISIO Logo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "R.FISIO - Fisioterapia e Osteopatia",
-    description: "Serviços profissionais de fisioterapia, osteopatia e exercício clínico",
-    images: ["/rfisio-sp.jpg"],
-  },
+  robots: "noimageindex, noarchive, nosnippet, nofollowindex",
 }
 
 export default function RootLayout({
