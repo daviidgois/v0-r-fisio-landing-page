@@ -59,11 +59,27 @@ export function HeroSection() {
                 Sobre a R. Fisio
               </Button>
               <Button
-                onClick={() => scrollToSection("contacto")}
+                asChild
                 className="bg-brand-purple hover:bg-brand-purple-hover text-white px-8 py-4 md:py-6 text-lg md:text-xl rounded-lg min-w-[240px]"
               >
-                Fazer Marcação
+                <a
+                  href="https://wa.me/351938140418?text=Olá,%20queria%20marcar%20uma%20sessão%20de%20fisioterapia."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && (window as any).gtag) {
+                      (window as any).gtag("event", "conversion", {
+                        send_to: "AW-XXXXXXX/abcDEfGhiJKlmNo", // substitui pelo ID da tua conversão Google Ads
+                        event_category: "contact",
+                        event_label: "whatsapp_click_hero",
+                      });
+                    }
+                  }}
+                >
+                  Fazer Marcação
+                </a>
               </Button>
+
             </div>
           </div>
         </div>
