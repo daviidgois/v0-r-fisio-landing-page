@@ -69,7 +69,7 @@ export function HeroSection() {
                   onClick={() => {
                     if (typeof window !== "undefined" && (window as any).gtag) {
                       (window as any).gtag("event", "conversion", {
-                        send_to: "AW-XXXXXXX/abcDEfGhiJKlmNo", // substitui pelo ID da tua conversão Google Ads
+                        send_to: "AW-17559565999/abcDEfGhiJKlmNo", //
                         event_category: "contact",
                         event_label: "whatsapp_click_hero",
                       });
